@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Panel</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background">
+        <div class="mainbox">
+            <div class="innerboxes" id="innerbox1">
+                <div class="star-icon">
+                    <span class="dot"> <img src="icon-star.svg" alt="star" class="star-img"> </span>
+                </div>
+
+                <h1 class="title">How did we do?</h1>
+
+                <p class="rating-info"> Please let us know how we did with your support request.
+                    All feedback is appreciated to help us improve our offering!</p>
+
+                <form>
+                <input type="radio" class="rating-numbers" id="num1" name="number" value="1" required>
+                <label class="label label-1" for="num1">1</label>
+
+                <input type="radio" class="rating-numbers" id="num2" name="number" value="2">
+                <label class="label label-2" for="num2">2</label>
+
+                <input type="radio" class="rating-numbers" id="num3" name="number" value="3">
+                <label class="label label-3" for="num3">3</label>
+
+                <input type="radio" class="rating-numbers" id="num4" name="number" value="4">
+                <label class="label label-4" for="num4">4</label>
+
+                <input type="radio" class="rating-numbers" id="num5" name="number" value="5">
+                <label class="label label-5" for="num5">5</label>
+                </form>
+                
+                <button type="button" class="submit" id="submit">SUBMIT</button>
+            
+            </div>
+
+            <div class="innerboxes" id="innerbox2">
+                <img src="illustration-thank-you.svg" alt="Thank You" class="main-img">
+            
+                <div class="shadow">
+                <span><p class="selected-rating" id="result"></p></span>
+                </div>
+    
+                <h2 class="thank-you">Thank You!</h2>
+    
+                <p class="info">We appreciate you taking the time to give a rating. 
+                   if you ever need more support, don't hesitate to 
+                   get in touch!
+                </p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
