@@ -26,10 +26,11 @@ var innerbox1 = document.getElementById("innerbox1")
 var innerbox2 = document.getElementById("innerbox2")
 
 submit.addEventListener("click",(event) => {
-    innerbox1.style.display = "none";
-    innerbox2.style.display = "grid";
-    displayRadioValue();
-    validateForm();
+    if (validateForm()) {
+        innerbox1.style.display = "none";
+        innerbox2.style.display = "grid";
+        displayRadioValue();
+    }    
 
 })
 
